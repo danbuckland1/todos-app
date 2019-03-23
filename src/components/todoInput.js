@@ -16,8 +16,13 @@ export default class TodoInput extends React.Component {
 
     }
     addTodo(todo){
-        console.log("TODO: ", todo);
+        //Ensure the todo text isn't empty
+        if(todo.length > 0){
+        this.props.addTodo(todo);
+        this.setState({value: ''});
+        }
     }
+  
     render(){
         return(
             <div>
