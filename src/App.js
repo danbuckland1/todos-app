@@ -54,7 +54,7 @@ class App extends Component {
                   key={todo.id}
                   id={todo.id}
                   removeTodo={this.removeTodo}
-                  onKeyDown={this.keyPress}
+                  // onKeyDown={this.keyPress}
                 />
               );
             })}
